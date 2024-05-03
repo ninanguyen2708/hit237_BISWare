@@ -1,5 +1,5 @@
 """
-ASGI config for s371506_proj project.
+ASGI config for wordgames project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 's371506_proj.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "wordgames.settings")
 
 application = get_asgi_application()

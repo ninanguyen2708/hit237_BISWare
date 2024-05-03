@@ -1,0 +1,12 @@
+{% extends './base.html' %}
+
+<!-- {% block title %}Home{% endblock %} -->
+
+{% block main_body %}
+    <p>The word {{ test_word }} is 
+        {% if is_palindrome == False %}
+        NOT 
+        {% endif %}
+         a palindrome. 
+    </p>
+{% endblock %}
