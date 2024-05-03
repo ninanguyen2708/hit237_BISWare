@@ -22,6 +22,6 @@ from palindrome import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("palindrome/", views.index, name="index"),
-    # path("palindrome/check/", views.check, name="check"),
-    path("palindrome/check/<str:word>/", views.palindrome_check, name="palindrome"),
+    path("palindrome/check/", views.check, name="check"),
+    path("palindrome/check/<str:word>/", views.palindrome_check, name="palindrome-check"),
 ]

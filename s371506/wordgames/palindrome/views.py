@@ -4,6 +4,9 @@ from django.shortcuts import render
 def index(request): 
     return render(request, './palindrome/index.html')
 
+def check(request): 
+    return render(request, './palindrome/check.html')
+
 def palindrome_check(request, word):
     clean_word = word.replace(" ", "").lower()
     
